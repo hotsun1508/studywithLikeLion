@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hi>내가 만든 사이트야</hi>
+    <strong>헤이 모두들 안녕~ 내가 누군지 아늬?</strong>
+    <em>민선아다!! 민선아다!! 민! 선! 아!</em>
+    <u>레포 연결 어떻게 하는거지?</u>
+    <del>hmmmmmmmmmmmmmmmmm...</del>
+
+    //링크
+    <a href="https://github.com/hotsun1508/Classlion.github.io">내 깃헙페이지</a>
+
+    //이미지 삽입
+    <br>
+    <img src="https://photo.hankooki.com/newsphoto/v001/2021/04/14/eun20210414181611_O_01_C_1.jpg" alt="빈센조사랑해여">
+
+    //동영상 삽입
+    <iframe width="967" height="544" src="https://www.youtube.com/embed/pavQdp62Z2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    //표 삽입
+    <table>
+        <tr> tr*3
+            <th>성별</th>
+            <td>남</td>
+            <td>여</td>
+        </tr>
+        <tr>
+            <th>학년</th>
+            <td colspan="2">3</td>
+        </tr>
+        <tr>
+            <th>이름</th>
+            <td>수노</td>
+            <td>선아</td>
+        </tr>
+    </table>
+
+    <hx>To-do List</hx>
+    <ol type="a">
+        <li>Classlion 마저 수강</li>
+        <li>자소서 쓰기</li>
+        <ul>
+            <li>kakao</li>
+            <li>ssafy</li>
+        </ul>
+        <li>과제!!!!!</li>
+        <li value="0">눕기, 놀기, 먹기</li>
+    </ol>
+
+    //form
+    <h2>회원가입</h2>
+    <form action="my-app" method="get">
+        <div>
+            <label for="userid">아이디: </label>
+            <input type="text" id="userid" name="id" placeholder="아이디를 입력하세요." value="sun">
+        </div>
+        <div>
+            <label for="password">비밀번호: </label>
+            <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요.">
+        </div>
+        <div>
+            <label for="">성별</label>
+            <select name="gender" id="gender">
+                <option value="male">남성</option>
+                <option value="female">여성</option>
+            </select>
+        </div>
+        <div>
+            <label for="introduce">자기소개: </label>
+            <textarea name="introduce" id="introduce" cols="30" rows="20" placeholder="자기소개를 입력하세요."></textarea>
+        </div>
+        <button type="submit">제출</button>
+        <button type="reset">초기화</button>
+    </form>
+</body>
+</html>
+
+http://127.0.0.1:5500/HTML&CSS/my-app?id=sunah
