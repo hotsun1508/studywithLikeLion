@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    //link style
+    <title>선택자</title>
+    <link rel="stylesheet" href="test.css">
+
+    //embedding style
+    <style>
+        h1,p {color: red}
+        h2 {color: blue}
+        #snow {background-color: yellowgreen;} 
+        .contents {font-size: 24px;}
+        a[target="_blank"] {color: orange;}
+    </style>
+    <style>
+        article > p {color: violet} 직계 자식 선택자
+        article p {color: skyblue} 모든 후손 선택자
+        a:link {color: red}
+        a:visited {color: green}
+        a:hover {background-color: paleturquoise;}
+    </style>
+</head>
+<body>
+    //inline style (Attribute 사용)l
+    <h1 style="color: red">서나라구</h1>
+    <h2 id="snow">아이디 선택자 main</h2>
+    <p class="contents">이건 문단이지롱</p>
+    <h2>클래스 선택자</h2>
+    <p class="contents">비슷한 특징을 가진 애들 그룹화해서 사용</p>
+    <a href="https://www.google.com/" target="_self">구글 현재 창</a>
+    <a href="https://www.google.com/" target="_blank">구글 새 창</a>
+    * 전체 선택자는 사용하지 않길 권장
+</body>
+<body>
+    <article>
+        <div>자식1
+            <p>후손1</p>
+        </div>
+        <div>자식2
+            <p>후손2</p>
+        </div>
+        <p>자식3</p>
+    </article>
+    <a href="https://www.google.com/">구글인데 여기다가 커서 올렸을 때랑 들어갔다 나왔을 때랑 색깔 다 달라</a>
+    pseudo class 특별한 상태 지정
+</body>
+</html>

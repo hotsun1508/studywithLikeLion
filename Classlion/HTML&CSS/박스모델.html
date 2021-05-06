@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>박스 모델</title>
+    <style>
+        body {background-color: rosybrown;}
+        #inner {
+            width: 300px;
+            height: 200px;
+            background-color: seashell;
+            margin: 20px;
+            padding: 20px;
+            /* overflow: scroll; 
+            border-style: dashed solid dotted double;
+            border-width: 6px 8px 10px 12px;
+            border-color: salmon royalblue violet lime; */
+            border: 6px solid lemonchiffon;
+            border-radius: 30px 20px 10px 0 / 0 10px 20px 30px;
+        }
+        #top {
+            width: 200px;
+            height: 100px;
+            background-color: skyblue;
+            box-sizing: content-box;
+            padding: 20px;
+            margin: 20px;
+        }
+        #bottom {
+            width: 200px;
+            height: 100px;
+            background-color: lemonchiffon;
+            box-sizing: border-box;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="inner">
+            contents-padding-border-margin 이 순서야~
+            내용이 content box를 벗어나면 overflow: hidden; 또는 scroll;
+            border style은 시계 방향으로 적용됨
+        </div>
+        <div id="main2">
+            <div id="top">top</div>
+            <div id="bottom">bottom</div>
+        </div>
+    </div>
+</body>
+</html>
