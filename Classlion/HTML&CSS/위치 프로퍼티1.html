@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>위치 관련 property 1</title>
+    <style>
+        body {background-color: skyblue; margin:0;}
+        #block {
+            background-color: pink;
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 20px;
+            display: none;
+        }
+        /* inline은 width, height를 가질 수 없음 */
+        #inline {
+            background-color: lemonchiffon;
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 20px;
+            display: inline-block;
+        }
+        #parent {
+            background-color: lightseagreen;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        #child {
+            background-color: lightyellow;
+            width: 100px;
+            height: 100px;
+            position: relative; 상대 위치 이동 
+            top: 20px;
+            left: 20px;
+        }
+        #child2 {
+            background-color: mediumslateblue;
+            position: absolute; 기준, 마치 inline block과 같음
+            top: 20px;
+            left: 20px;
+        }
+        #main {height: 1200px;}
+        #fixed {
+            background-color: mistyrose;
+            height: 60px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        #top {
+            background-color: palegoldenrod;
+            height: 100px;
+            width: 100px;
+            position: absolute
+            z-index: 2; 높이를 지정
+        }
+        #bottom {
+            background-color: peachpuff;
+            height: 100px;
+            width: 100px;
+            position: absolute
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p id="block">
+            block
+        </p>
+        <span id="inline">
+            inline
+        </span>
+    </div>
+    <div id="parent">
+        <div id="child">
+            child
+        </div>
+        <div id="child2">
+            child2
+        </div> 
+        <div id="fixed">
+            여기는 고정되어있습니다.
+        </div>
+        재밌는데 어렵다... 언제 이걸 다 외우지... 괜찮아... 할 수 있어.... 중요한 건 흥미야... 포기만 하지 말자... 후후... 요즘 인생 no jam...
+        재밌는데 어렵다... 언제 이걸 다 외우지... 괜찮아... 할 수 있어.... 중요한 건 흥미야... 포기만 하지 말자... 후후... 요즘 인생 no jam...
+        재밌는데 어렵다... 언제 이걸 다 외우지... 괜찮아... 할 수 있어.... 중요한 건 흥미야... 포기만 하지 말자... 후후... 요즘 인생 no jam...
+        재밌는데 어렵다... 언제 이걸 다 외우지... 괜찮아... 할 수 있어.... 중요한 건 흥미야... 포기만 하지 말자... 후후... 요즘 인생 no jam...
+        재밌는데 어렵다... 언제 이걸 다 외우지... 괜찮아... 할 수 있어.... 중요한 건 흥미야... 포기만 하지 말자... 후후... 요즘 인생 no jam...
+        <div id="top">
+            앞 입니다
+        </div>
+        <div id="bottom">
+            뒤 입니다
+        </div>
+    </div>
+</body>
+</html>
