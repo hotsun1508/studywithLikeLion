@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        p, div{background-color: black;}
+
+        p {color: red !important;}
+        #id {color: yellow;}    
+        p.class {color: green;} /* id선택자 class선택자보다 명시도 높다 */
+        div.class{ color:teal;} /*명시도가 더 높다 */
+        .class {color: blue;}
+        p {color: violet;}
+        div {color: purple;}
+        * {color: white;}
+    </style>
+    <style>
+        .first{color: brown;}
+        .second{color: crimson;}
+        /* 우선순위 crimson한테 있음 */
+        p {color: darkolivegreen;}
+        p {color: darkorange;}
+    </style>
+</head>
+<body>
+    <!-- <p id="id" style="color: orange">p tag with id</p> -->
+    <p id="id" class='class'>p tage with id</p>
+    <div class="class">div tag with class</div>
+</body>
+<body>
+    <p class="first second">Say Hi!</p>
+</body>
+</html>
+
+
+https://www.w3.org/TR/CSS21/propidx
+
