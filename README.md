@@ -6,8 +6,8 @@
   > Python 기초
 
 *20210428 bootstrap 실습  
-assets  
-css    
-js  
-index.html - 텍스트, 이미지 변경    
+> assets    
+> css      
+> js    
+> index.html - 텍스트, 이미지 변경    
 
