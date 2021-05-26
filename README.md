@@ -10,6 +10,7 @@
   > 웹기초 - 강의 들으면서 실습   
   > HTML&CSS - HTML 완료, CSS1, CSS2 완료   
   > Python 기초 - 수강 완료  
-  > Django 1 + Django Settings 
+  > Django 1 + Django Settings - 수강 완료
+  > Django 2
 
 
