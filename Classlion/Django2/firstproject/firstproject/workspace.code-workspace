@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\Django1\\firstproject\\firstapp"
+		},
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\Django1\\firstproject\\firstproject"
+		}
+	],
+	"settings": {}
+}
