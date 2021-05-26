@@ -1,0 +1,7 @@
+pip list
+가상환경 안에 있는 list
+ModuleNotFoundError: No module named 'django'
+ImportError: Couldn't import Django. 
+
+$ python manage.py migrate 명령어
+-> models.py에 있는걸 해석해서 database 설계 
