@@ -1,0 +1,33 @@
+
+<Django Framework>
+
+프로젝트 생성
+Framework: 자주 사용, 반복적 사용 기능들을 미리 만들어놔서 개발자들이 편하게 사용할 수 있도록 하는 것
+        -> 이동식 주택: 라이브러리에 비해 구조가 잡혀있어서 작업시간 짧다(개발속도 빠름)
+라이브러리: 처음부터 스스로 건축하는 집
+*개발 현장: 한 프로젝트에 여러 라이브러리 + 프레임워크 동시 사용
+
+Terminal 띄우는 이유: Visual Studio와 같은 에디터에는 없는 기능들을 사용하기 위함
+
+<가상환경>
+독립된 가상 환경 필요한 이유: Python과 Django의 버전이 다를 수 있기 때문 
+terminal 명령어: python -m venv [만들고 싶은 가상환경 이름] "python 옵션m virtual environment 만들고 싶은 venv 이름
+EX) python -m venv myvenv 
+
+script 아래 - activate가 가상환경 실행함
+activate 실행시키는 명령어: source/가상환경 폴더이름/폴더이름(Scripts)/activate
+EX) source myvenv/Scripts/activate 또는 source myvenv/Script/activate
+
+Django download 명령어: pip install django
+        pip: Python Install Package
+        -> Lib 폴더에 Django 관련 파일 추가됨
+
+Django로 프로젝트 만드는 명령어: django-admin startproject [만들고 싶은 프로젝트 이름]
+        firstproject 폴더 생성
+        > manage.py 이건 프로젝트 실행되기 위해 꼭 필요한 파일 - server 실행
+       1. 우선 이 파일 안으로 들어가야 함: cd firstproject (이 파일로 위치 이동)
+       2. 명령어 s: 무슨 파일이 있는지 보기
+       3. 여기서 바로 manage.py 파일 실행 - python interpreter로 실행 명령어: python manage.py runserver
+       4. 그렇게해서 생긴 주소 http://127.0.0.1:8000/ 클릭하면
+
+
