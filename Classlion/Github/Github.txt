@@ -1,0 +1,50 @@
+
+<Github>
+
+git config --global user.name "hotsun1508" #github 가입했던 username
+git config --global user.email "hotsun1508@gmail.com" #github 가입할 때 쓰던 email
+    > Enter 치면 됨
+
+Create new repository:
+1. echo "# git_test" >> README.md
+2. git init
+3. git add README.md
+4. git commit -m "first commit"
+5. git branch -M main
+6. git remote add origin https://github.com/hotsun1508/git_test.git
+7. git push -u origin main
+
+    > terminal에 복사하고 Enter > 로그인 
+
+<Git 명령어>
+1. # git_test라고 써있음 -> 프로그램 사용법, 패키지, 설치법 등. 처음 보는 사람들을 위해
+2. git init: 현재 디렉터리를 새로운 git 저장소로 초기화
+
+> 하고나면 숨김파일로 .git관련 파일 생김
+    terminal 명령어: ls -al
+
+Project 1 - git init / Project 2 - git init : 각각 git init을 해야 함. 서로 다른 프로젝트니까 따로 관리 및 담당.
+
+3. git add . : 저장할 파일 선택 > 선택한 파일 저장
+    Staging area: 저장할 파일 넣고 > 통째로 저장 
+    EX) git add file1 file2 file3 -> Staging area에 넣을 파일 선택
+
+    git status: staging area에 무슨 파일이 있는지 보기 위함, 현재 git 상황
+    .gitignore
+4. git commit -m "first commit" : staging area에 올린 파일 저장해주는 명령어 "주석, 메세지"
+    git log: commit한 내용 볼 수 있음
+    q: quit
+5. git branch -M main: 작업중인 페이지에서 분기점을 만들어 줌, master branch 저절로 생성, master branch의 이름을 main으로 바꾼다는 의미
+    EX) git branch leaf
+    git status - main 안에 있음. 
+    branch 옮기는 명령어: git checkout leaf(옮길 branch 이름)
+    git status -> 현재 branch가 leaf에 있음
+
+*로컬 환경에서 인터넷 연결 없이 혼자 사용 가능
+BUT 협업을 위해 repository에 백업하려면 
+6. git remote add origin https://repository주소: 이 repo주소를 origin이라는 이름으로 연결, 이름 origin말고 다른거 얼마든지 할 수 있음
+    > origin이라는 이름으로 이 repo주소에 code를 upload 또는 download 가능해짐
+
+7. git push origin(링크의 이름) main(branch 이름): repository에 작업환경을 올려주는 명령어
+    > upload 완료
+    > EX) git push leaf : leaf라는 branch 올리는 경우 
